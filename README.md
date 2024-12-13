@@ -34,3 +34,4 @@ Repository: [https://github.com/lavanyasatpute/JavaScript.git](https://github.co
 ## To Execute code
 1. Command: cd JavaScript
 2. Command: npm install
+3. Command: node file_name.js
