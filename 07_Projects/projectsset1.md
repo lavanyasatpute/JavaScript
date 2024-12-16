@@ -68,3 +68,19 @@ form.addEventListener('submit',(e)=>{
 
 })
 ```
+## Project 3
+```javascript
+const clock = document.querySelector('#clock');
+
+// let hr = now.getHours();
+// let min = now.getMinutes();
+// console.log(clock);
+// const hour = hr >= 12 ? 'PM' : 'AM';
+// clock.innerHTML = `${hr}:${min} ${hour}`
+setInterval(function () {
+  let now = new Date();
+  let hr = now.getHours();
+  let hour = hr >= 12 ? 'PM' : 'AM';
+  clock.innerHTML = `${now.toLocaleTimeString()} ${hour}`;
+}, 1000);
+```
