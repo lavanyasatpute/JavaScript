@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hii Good Morning Lavanya, Shri Shivay Namhstubhyam</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    const sayDate = () => {
+        console.log(Date.now());
+    }
+    let day = 0;
+    document.querySelector('#start').addEventListener('click',()=>{
+        // console.log(date);
+        day = setInterval(sayDate,0);
+    })
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(day)
+    })
+</script>
+</html>
